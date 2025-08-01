@@ -21,10 +21,8 @@ def biseccion(f, a, b, tol=1e-6, maxIter=100, prt=0):
             conv = 1
             break
 
-        if f(a) * fx < 0:
-            b = x
-        else:
-            a = x
+        if f(a) * fx < 0:   b = x
+        else:               a = x
 
         iters += 1
 
